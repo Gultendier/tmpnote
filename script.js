@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// Load saved note from cookies when the page is loaded
 	const savedNote = getCookie('note');
-	if (savedNote) {
+	if (savedNote !== null) {
 		noteArea.value = savedNote;
 	}
 
